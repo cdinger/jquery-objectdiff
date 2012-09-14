@@ -20,6 +20,6 @@ Result (contents of changes):
 -----------------------------
 
 ```javascript
-    {name: {first:["Johnny","John"]}, age:[null,30]}
+    {name: {first:["Johnny","John"]}, age:[undefined,30]}
 ```
 

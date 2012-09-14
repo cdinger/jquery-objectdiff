@@ -22,7 +22,7 @@
  */
 (function($){ 
   $.objectDiff = function(a, b, c) {
-    c = {} || c;
+    c = {};
     $.each([a, b], function(index, obj) {
       for (prop in obj) {
         if (obj.hasOwnProperty(prop)) {

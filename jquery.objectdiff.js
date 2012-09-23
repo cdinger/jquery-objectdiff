@@ -1,7 +1,7 @@
 /**
  * jquery-objectdiff  - a jQuery plugin
  *
- * version 1.0
+ * version 1.0.1
  *
  * This plugin is just a helper function for calculating a diff of two similar
  * objects ala ActiveRecord's changes hash. Just pass in two objects and this

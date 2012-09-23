@@ -26,5 +26,13 @@ describe("objectDiff", function() {
     var diff = {name:{first:["Johnny","John"]}};
     expect($.objectDiff(before, after)).toEqual(diff);
   });
+
+  // Github issue #1
+  it("should not detect a change if before and after value is null", function() {
+    var before = {id:null};
+    var after = {id:null};
+    var diff = {};
+    expect($.objectDiff(before, after)).toEqual(diff);
+  });
 });
 

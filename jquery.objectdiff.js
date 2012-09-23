@@ -26,11 +26,11 @@
     $.each([a, b], function(index, obj) {
       for (prop in obj) {
         if (obj.hasOwnProperty(prop)) {
-          if (typeof obj[prop] === "object") {
+          if (typeof obj[prop] === "object" && obj[prop] !== null) {
             c[prop] = $.objectDiff(a[prop], b[prop], c);
           }
           else {
-            if (a[prop] != b[prop]) {
+            if (a[prop] !== b[prop]) {
               c[prop] = [a[prop], b[prop]];
             }
           }

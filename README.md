@@ -6,7 +6,7 @@ objects ala ActiveRecord's [changes](http://api.rubyonrails.org/classes/ActiveMo
 hash. Just pass in two objects and this function will return an object of
 changes that contains only the properties that have changed.
 
-Differences are stored in arrays; the first element has the 'before' valueand
+Differences are stored in arrays; the first element has the 'before' value and
 the second element is the 'after' value.
 
 Usage:

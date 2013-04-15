@@ -30,6 +30,8 @@
             c[prop] = $.objectDiff(a[prop], b[prop], c);
           }
           else {
+            if(a === undefined) a = {};
+            if(b === undefined) b = {};
             if (a[prop] !== b[prop]) {
               c[prop] = [a[prop], b[prop]];
             }

@@ -34,5 +34,12 @@ describe("objectDiff", function() {
     var diff = {};
     expect($.objectDiff(before, after)).toEqual(diff);
   });
-});
 
+  // Github issue #2
+  it("should not throw exception when encountering sub-objects", function() {
+    var a = { x: { i:1, j:2, k: 3 }};
+    var b = { x: { i:2, j:2, k: 3 }, y: { i:2 }};
+    var diff = {x:{i:[1,2]}, y:{i:[undefined,2]}};
+    expect($.objectDiff(a, b)).toEqual(diff);
+  });
+});
